@@ -14,7 +14,7 @@
     <a-assets>
       <img id="pano" src="ANDigital-min.jpg" />
       <img
-       id="left-image"
+       id="burndown-image"
        src="https://cdn.glitch.com/93ba8327-3def-4e58-b10d-9fb6f513a7d7%2FBar%20Chart%20Image.svg?1518175891501" />
     </a-assets>
 
@@ -23,10 +23,9 @@
 
     <!-- Left box -->
     <a-box
-     src="#left-image"
      position="-6 3 -3"
      scale="5.391 3.826 0.274"
-     color="#FFF">
+     color="#4CC3D9">
       <!--<a-image src="#left-image" position="0 0 2" click-drag></a-image>-->
     </a-box>
 
@@ -51,10 +50,22 @@
 
     <a-sky rotation="0 -90 0" src="#pano"></a-sky>
 
+    <!-- Bottom of scrum board  -->
+    <!-- Bottom box -->
+    <a-box
+     src="#burndown-image"
+     position="-0.040 -2.324 -2.928"
+     scale="5.391 3.826 0.274"
+     color="#FFF">
+    </a-box>
+
+    <!-- Bottom title -->
+    <a-text position="-1.703 -4.576 -2.972" value="Burndown Chart" color="#FFF" scale="2 2 2"></a-text>
+
     <!-- Olly pillows -->
 
 
-    <a-entity position="0 0 3.8">
+    <a-entity position="0 0 5.2">
       <a-camera look-controls-enabled="true" keyboard-controls="fpsMode: false"></a-camera>
     </a-entity>
   </a-scene>
