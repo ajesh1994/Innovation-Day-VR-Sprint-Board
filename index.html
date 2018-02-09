@@ -1,30 +1,62 @@
+<html>
+<head>
+  <meta name="description" content="Basic example for Textarea component." />
+  <script src="https://aframe.io/releases/0.7.0/aframe.min.js"></script>
+  <!--<script src="https://jesstelford.github.io/aframe-click-drag-component/build.js"></script>-->
+  <!--<script src="https://unpkg.com/aframe-textarea-component/dist/aframe-textarea-component.min.js"></script>-->
+  <script>
+    // registerAframeClickDragComponent(window.AFRAME);
+  </script>
+</head>
 
-    <script src="https://jesstelford.github.io/aframe-click-drag-component/build.js"></script>
-    <meta name="description" content="Basic example for Textarea component."></meta>
-    <script src="https://unpkg.com/aframe-textarea-component/dist/aframe-textarea-component.min.js"></script>
-  <body>
-        <a href="https://github.com/jesstelford/aframe-click-drag-component" target="_blank">More on github.com</a>
+<body>
   <a-scene>
     <a-assets>
-      <img id="pano" src="ANDigital.jpg">
+      <img id="pano" src="ANDigital-min.jpg" />
+      <img
+       id="left-image"
+       src="https://cdn.glitch.com/93ba8327-3def-4e58-b10d-9fb6f513a7d7%2FBar%20Chart%20Image.svg?1518175891501" />
     </a-assets>
 
-      <a-sphere click-drag position="0 1.25 -1" radius="1.25" color="#EF2D5E"></a-sphere>
-      <a-box click-drag position="-1 0.5 1" rotation="0 45 0" width="0.25" height="0.25" depth="0.25"  color="#4CC3D9"></a-box>
-      <a-box src="#texture" click-drag position="-1 0.5 1" rotation="0 45 0" width="1" height="1" depth="1"  color="#00000"> <a-text text="Hello World;"></a-text></a-box>
-      <a-cylinder click-drag position="1 0.75 1" radius="0.5" height="1.5" color="#FFC65D" text="value: Hello World;"></a-cylinder>
+    <!-- Center title -->
+    <a-text position="-7 6 -3" value="Backlog" color="#FFF" scale="2 2 2"></a-text>
 
-      <a-sky src="#pano"></a-sky>
+    <!-- Left box -->
+    <a-box
+     src="#left-image"
+     position="-6 3 -3"
+     scale="5.391 3.826 0.274"
+     color="#FFF">
+      <!--<a-image src="#left-image" position="0 0 2" click-drag></a-image>-->
+    </a-box>
 
-      <a-entity click-drag position="0 1.25 -1" position="0 1.5 -1" textarea="cols: 20; rows: 4; text: this is a
-multiline textarea; backgroundColor: #01579b; color: white;"></a-entity>
+    <!-- Center title -->
+    <a-text position="-1 6 -3" value="In Progress" color="#FFF" scale="2 2 2"></a-text>
 
-       <a-entity click-drag position="0 1.25 -1" position="1 4 -1" textarea="cols: 20; rows: 4; text: this is a
-multiline textarea; backgroundColor: #01579b; color: white;"></a-entity>
+    <!-- Center box -->
+    <a-box
+     position="0 3 -3"
+     rotation="0 0 0"
+     scale="5.391 3.826 0.274"
+     color="#4CC3D9"></a-box>
 
-      <a-entity position="0 0 3.8">
-        <a-camera look-controls-enabled="true" keyboard-controls="fpsMode: false"></a-camera>
-      </a-entity>
-    </a-scene>
-  </body>
+    <!-- Right title -->
+    <a-text position="5.5 6 -3" value="Done" color="#FFF" scale="2 2 2"></a-text>
+
+    <!-- Right box-->
+    <a-box
+     position="6 3 -3"
+     scale="5.391 3.826 0.274"
+     color="#4CC3D9"></a-box>
+
+    <a-sky rotation="0 -90 0" src="#pano"></a-sky>
+
+    <!-- Olly pillows -->
+
+
+    <a-entity position="0 0 3.8">
+      <a-camera look-controls-enabled="true" keyboard-controls="fpsMode: false"></a-camera>
+    </a-entity>
+  </a-scene>
+</body>
 </html>
