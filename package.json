@@ -1,0 +1,19 @@
+{
+  "name": "innovation-day-vr-sprint-board",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ajesh1994/Innovation-Day-VR-Sprint-Board.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ajesh1994/Innovation-Day-VR-Sprint-Board/issues"
+  },
+  "homepage": "https://github.com/ajesh1994/Innovation-Day-VR-Sprint-Board#readme"
+}
