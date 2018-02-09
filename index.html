@@ -2,6 +2,7 @@
 <head>
   <meta name="description" content="Basic example for Textarea component." />
   <script src="https://aframe.io/releases/0.7.0/aframe.min.js"></script>
+  <script src="https://unpkg.com/aframe-textarea-component/dist/aframe-textarea-component.min.js"></script>
   <!--<script src="https://jesstelford.github.io/aframe-click-drag-component/build.js"></script>-->
   <!--<script src="https://unpkg.com/aframe-textarea-component/dist/aframe-textarea-component.min.js"></script>-->
   <script>
@@ -22,31 +23,38 @@
     <a-text position="-7 6 -3" value="Backlog" color="#FFF" scale="2 2 2"></a-text>
 
     <!-- Left box -->
-    <a-box
+
+    <a-entity position="-6 3 -3" textarea="cols: 20; rows: 4; text: this is a
+multiline textarea; backgroundColor: #FF323C; color: white;" scale="5.391 8.826 0.274"></a-entity>
+    <!-- <a-box
      position="-6 3 -3"
      scale="5.391 3.826 0.274"
      color="#4CC3D9">
-      <!--<a-image src="#left-image" position="0 0 2" click-drag></a-image>-->
-    </a-box>
+      <!-a-image src="#left-image" position="0 0 2" click-drag></a-image>-->
+    <!-- </a-box> -->
 
     <!-- Center title -->
     <a-text position="-1 6 -3" value="In Progress" color="#FFF" scale="2 2 2"></a-text>
 
     <!-- Center box -->
-    <a-box
+    <a-entity position="0 3 -3" textarea="cols: 20; rows: 4; text: this is a
+multiline textarea; backgroundColor: #FF323C; color: white;" scale="5.391 8.826 0.274"></a-entity>
+    <!-- <a-box
      position="0 3 -3"
      rotation="0 0 0"
      scale="5.391 3.826 0.274"
-     color="#4CC3D9"></a-box>
+     color="#4CC3D9"></a-box> -->
 
     <!-- Right title -->
     <a-text position="5.5 6 -3" value="Done" color="#FFF" scale="2 2 2"></a-text>
 
     <!-- Right box-->
-    <a-box
+    <a-entity position="6 3 -3" textarea="cols: 20; rows: 4; text: this is a
+multiline textarea; backgroundColor: #FF323C; color: white;" scale="5.391 8.826 0.274"></a-entity>
+    <!-- <a-box
      position="6 3 -3"
      scale="5.391 3.826 0.274"
-     color="#4CC3D9"></a-box>
+     color="#4CC3D9"></a-box> -->
 
     <a-sky rotation="0 -90 0" src="#pano"></a-sky>
 
@@ -93,7 +101,8 @@
 
 
     <a-entity position="0 0 5.2">
-      <a-camera look-controls-enabled="true" keyboard-controls="fpsMode: false"></a-camera>
+      <a-camera><a-cursor></a-cursor></a-camera>
+      <!-- <a-camera look-controls-enabled="true" keyboard-controls="fpsMode: false"></a-camera> -->
     </a-entity>
   </a-scene>
 </body>
